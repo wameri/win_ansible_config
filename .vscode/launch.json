@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "001_win_background",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\01_bin\\001_win_background.py",
+            "cwd": "${workspaceFolder}", 
+            "console": "integratedTerminal",
+            "args":[
+            ]
+        },
+        {
+            "name": "002_vscode",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\01_bin\\002_vscode.py",
+            "cwd": "${workspaceFolder}", 
+            "console": "integratedTerminal",
+            "args":[
+            ]
+        }
+    ]
+}

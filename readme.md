@@ -27,6 +27,7 @@ winget install
     dbrgn.tealdeer
     LLVM.LLVM
     Google.Chrome 
+    Docker.DockerDesktop 
 
 ```
 # install scoop
@@ -82,10 +83,7 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 # wsl setup
 
 ```
-sudo apt install 
-thunar
-python3-pip 
-python3-venv
+sudo apt install thunar python3-pip python3-venv -y
 
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
 
@@ -98,3 +96,21 @@ install vscode extenstion in wsl
 ```
 
 
+
+# docker 
+
+```
+ Settings > Resources > WSL Integration.
+ select ubuntu
+```
+
+
+# git lfs
+
+do this then add and commit the files
+```
+ git lfs install
+ git lfs track "*.jpg"
+ git lfs track "*.png"
+ 
+```
