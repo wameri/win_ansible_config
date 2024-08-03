@@ -20,6 +20,25 @@
             "console": "integratedTerminal",
             "args":[
             ]
+        },
+        {
+            "name": "003_link_dotfiles",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\01_bin\\003_link_dotfiles.py",
+            "cwd": "${workspaceFolder}", 
+            "console": "integratedTerminal",
+            "args":[
+            ]
+        },
+        {
+            "name": "004_conda",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\01_bin\\004_conda.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "args": []
         }
     ]
 }

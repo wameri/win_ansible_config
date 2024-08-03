@@ -1,110 +1,171 @@
-
+conda_envs:
+- name: base
+  requirements: requirements.txt
+dotfiles_configs:
+  dotfiles_dir: C:\data\3_resources\20-29_workspace\20.02_win_dotfiles
+  dotfiles_repo: ''
+dotfiles_links:
+- source: .bash_profile
+  target: ~/.bash_profile
+- source: .gitconfig
+  target: ~/.gitconfig
+- source: .condarc
+  target: ~/.condarc
+- source: init.vim
+  target: ~/AppData/Local/nvim/init.vim
+- source: ginit.vim
+  target: ~/AppData/Local/nvim/ginit.vim
+- source: Microsoft.PowerShell_profile.ps1
+  target: ~/onedrive_ezraameri/OneDrive - Microsoft/Documents/PowerShell/Microsoft.PowerShell_profile.ps1
+- source: starship.lua
+  target: ~/AppData/Local/clink/starship.lua
+- source: starship.toml
+  target: ~/.config\starship.toml
+- source: vscode_settings.json
+  target: ~/AppData/Roaming/Code/User/settings.json
+- source: winterminal.json
+  target: ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+scoope_packages:
+- Ffmpeg
+- Ninja
+- innounp
+- dark
+vscode_extensions:
+- asvetliakov.vscode-neovim
+- bubersson.theme-hop-light
+- cs128.cs128-clang-tidy
+- cschlosser.doxdocgen
+- davidbwaters.macos-modern-theme
+- docsmsft.docs-yaml
+- donjayamanne.githistory
+- donjayamanne.kusto
+- dracula-theme.theme-dracula
+- eamodio.gitlens
+- easyaspi314.macos-theme
+- enkia.tokyo-night
+- evan-buss.font-switcher
+- fehey.brackets-light-pro
+- felicio.vscode-fold
+- felipe-mendes.slack-theme
+- github.copilot
+- github.copilot-chat
+- github.github-vscode-theme
+- grapecity.gc-excelviewer
+- guyutongxue.cpp-reference
+- huacnlee.theme-macos-classic
+- huynhduong.nvtokyo-theme
+- jdinhlife.gruvbox
+- jeff-hykin.better-cpp-syntax
+- josetr.cmake-language-support-vscode
+- jprestidge.theme-material-theme
+- kevinrose.vsc-python-indent
+- liviuschera.noctis
+- loilo.snazzy-light
+- meezilla.json
+- metaphore.kanagawa-vscode-color-theme
+- mhutchie.git-graph
+- ms-azuretools.vscode-azureresourcegroups
+- ms-azuretools.vscode-docker
+- ms-dotnettools.vscode-dotnet-runtime
+- ms-python.black-formatter
+- ms-python.debugpy
+- ms-python.isort
+- ms-python.python
+- ms-python.vscode-pylance
+- ms-toolsai.jupyter
+- ms-toolsai.jupyter-keymap
+- ms-toolsai.jupyter-renderers
+- ms-toolsai.vscode-ai
+- ms-toolsai.vscode-ai-remote
+- ms-toolsai.vscode-jupyter-cell-tags
+- ms-toolsai.vscode-jupyter-slideshow
+- ms-vscode-remote.remote-containers
+- ms-vscode-remote.remote-ssh
+- ms-vscode-remote.remote-ssh-edit
+- ms-vscode-remote.remote-wsl
+- ms-vscode.anycode
+- ms-vscode.anycode-c-sharp
+- ms-vscode.anycode-cpp
+- ms-vscode.anycode-go
+- ms-vscode.anycode-java
+- ms-vscode.anycode-kotlin
+- ms-vscode.anycode-php
+- ms-vscode.anycode-python
+- ms-vscode.anycode-rust
+- ms-vscode.anycode-typescript
+- ms-vscode.azure-account
+- ms-vscode.cmake-tools
+- ms-vscode.cpptools
+- ms-vscode.cpptools-extension-pack
+- ms-vscode.cpptools-themes
+- ms-vscode.hexeditor
+- ms-vscode.mono-debug
+- ms-vscode.powershell
+- ms-vscode.remote-explorer
+- ms-vscode.theme-3024kit
+- ms-vscode.theme-markdownkit
+- ms-vscode.theme-materialkit
+- msrvida.vscode-sanddance
+- nilssoderman.batch-runner
+- njpwerner.autodocstring
+- pkief.material-icon-theme
+- redhat.vscode-yaml
+- richie5um2.vscode-sort-json
+- rosshamish.kuskus-kusto-language-server
+- rosshamish.kuskus-kusto-syntax-highlighting
+- shd101wyy.markdown-preview-enhanced
+- shortarrow.line-number-deco
+- sumitsaha.learn-with-sumit-theme
+- teabyii.ayu
+- tokyo-night.nvtokyo
+- twxs.cmake
+- uloco.theme-bluloco-dark
+- uloco.theme-bluloco-light
+- vscode-icons-team.vscode-icons
+- wholroyd.jinja
 win_background_configs:
-  image_dir: "."
-  output_dir: "02_assets/_outputs_/win_backgrounds"
-  font_name: "Space Mono Nerd Font Complete Windows Compatible.ttf"
+  font_name: Space Mono Nerd Font Complete Windows Compatible.ttf
   font_size: 100
+  image_dir: .
   image_fraction: 0.25
-
+  output_dir: 02_assets/_outputs_/win_backgrounds
 win_backgrounds:
-  - name: "Meeting"
-    image: "02_assets/01_green/bogomil-mihaylov-N2sgnKoGbkE-unsplash_crop.jpg"
-  - name: "Coding "
-    image: "02_assets/01_green/david-hofmann-sZ_Lo1P2PAI-unsplash_cropped.jpg" 
-  - name: "Note   "
-    image: "02_assets/01_green/shawn-kenessey-gcGYpJzxiqk-unsplash_cropped_2.jpg"
-  - name: "Devbox1"
-    image: "02_assets/01_green/shawn-kenessey-gcGYpJzxiqk-unsplash_cropped.jpg"
-  - name: "Devbox2"
-    image: "02_assets/01_green/wengang-zhai-YcCcz50xI64-unsplash_2.jpg"
-  - name: "Learn  "
-    image: "02_assets/01_green/wengang-zhai-YcCcz50xI64-unsplash.jpg"
-
-vscode_extenstions:
-  - GitHub.copilot
-  - GitHub.github-vscode-theme
-  - GrapeCity.gc-excelviewer
-  - Guyutongxue.cpp-reference
-  - HuynhDuong.nvtokyo-theme
-  - KevinRose.vsc-python-indent
-  - Meezilla.json
-  - NilsSoderman.batch-runner
-  - PKief.material-icon-theme
-  - ShortArrow.line-number-deco
-  - SumitSaha.learn-with-sumit-theme
-  - asvetliakov.vscode-neovim
-  - bubersson.theme-hop-light
-  - cschlosser.doxdocgen
-  - davidbwaters.macos-modern-theme
-  - docsmsft.docs-yaml
-  - donjayamanne.githistory
-  - donjayamanne.kusto
-  - dracula-theme.theme-dracula
-  - eamodio.gitlens
-  - easyaspi314.macos-theme
-  - enkia.tokyo-night
-  - evan-buss.font-switcher
-  - fehey.brackets-light-pro
-  - felicio.vscode-fold
-  - felipe-mendes.slack-theme
-  - huacnlee.theme-macos-classic
-  - jdinhlife.gruvbox
-  - jeff-hykin.better-cpp-syntax
-  - josetr.cmake-language-support-vscode
-  - jprestidge.theme-material-theme
-  - liviuschera.noctis
-  - loilo.snazzy-light
-  - metaphore.kanagawa-vscode-color-theme
-  - mhutchie.git-graph
-  - ms-azuretools.vscode-docker
-  - ms-dotnettools.vscode-dotnet-runtime
-  - ms-python.isort
-  - ms-python.python
-  - ms-python.vscode-pylance
-  - ms-toolsai.jupyter
-  - ms-toolsai.jupyter-keymap
-  - ms-toolsai.jupyter-renderers
-  - ms-toolsai.vscode-ai
-  - ms-toolsai.vscode-ai-remote
-  - ms-toolsai.vscode-jupyter-cell-tags
-  - ms-toolsai.vscode-jupyter-slideshow
-  - ms-vscode-remote.remote-containers
-  - ms-vscode-remote.remote-ssh
-  - ms-vscode-remote.remote-ssh-edit
-  - ms-vscode-remote.remote-wsl
-  - ms-vscode.Theme-3024Kit
-  - ms-vscode.Theme-MarkdownKit
-  - ms-vscode.Theme-MaterialKit
-  - ms-vscode.anycode
-  - ms-vscode.anycode-c-sharp
-  - ms-vscode.anycode-cpp
-  - ms-vscode.anycode-go
-  - ms-vscode.anycode-java
-  - ms-vscode.anycode-kotlin
-  - ms-vscode.anycode-php
-  - ms-vscode.anycode-python
-  - ms-vscode.anycode-rust
-  - ms-vscode.anycode-typescript
-  - ms-vscode.azure-account
-  - ms-vscode.cmake-tools
-  - ms-vscode.cpptools
-  - ms-vscode.cpptools-extension-pack
-  - ms-vscode.cpptools-themes
-  - ms-vscode.hexeditor
-  - ms-vscode.mono-debug
-  - ms-vscode.powershell
-  - ms-vscode.remote-explorer
-  - msrvida.vscode-sanddance
-  - njpwerner.autodocstring
-  - redhat.vscode-yaml
-  - rosshamish.kuskus-kusto-language-server
-  - rosshamish.kuskus-kusto-syntax-highlighting
-  - shd101wyy.markdown-preview-enhanced
-  - teabyii.ayu
-  - tokyo-night.nvtokyo
-  - twxs.cmake
-  - uloco.theme-bluloco-dark
-  - uloco.theme-bluloco-light
-  - vscode-icons-team.vscode-icons
-  - wholroyd.jinja
-  
+- image: 02_assets/01_green/bogomil-mihaylov-N2sgnKoGbkE-unsplash_crop.jpg
+  name: Meeting
+- image: 02_assets/01_green/wengang-zhai-YcCcz50xI64-unsplash.jpg
+  name: 'Coding '
+- image: 02_assets/01_green/shawn-kenessey-gcGYpJzxiqk-unsplash_cropped.jpg
+  name: 'Note   '
+- image: 02_assets/01_green/shawn-kenessey-gcGYpJzxiqk-unsplash_cropped.jpg
+  name: Devbox1
+- image: 02_assets/01_green/wengang-zhai-YcCcz50xI64-unsplash.jpg
+  name: Devbox2
+- image: 02_assets/01_green/wengang-zhai-YcCcz50xI64-unsplash.jpg
+  name: 'Learn  '
+winget_packages:
+- Vscode
+- Canonical.Ubuntu.2204
+- Debian.Debian
+- whitewaterfoundry.fedora-remix-for-wsl
+- Docker.DockerDesktop
+- DominikReichl.KeePass
+- Microsoft.msmpisdk
+- Microsoft.PowerShell
+- Starship.Starship
+- chrisant996.Clink
+- 7zip.7zip
+- cURL.cURL
+- Neovim.Neovim
+- OpenJS.NodeJS
+- dbrgn.tealdeer
+- LLVM.LLVM
+- Google.Chrome
+- Docker.DockerDesktop
+- DEVCOM.JetBrainsMonoNerdFont
+- Microsoft.PowerToys
+- LutzRoeder.Netron
+- Microsoft.WindowsTerminal
+- Git.Git
+- Obsidian.Obsidian
+- Anaconda.Miniconda3
+- clink

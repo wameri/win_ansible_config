@@ -2,6 +2,7 @@
 # Windows feature
 
 turn on Windows subsystem for linux
+enable win for developer: https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
 wsl --update
 wsl --install
 
@@ -9,33 +10,13 @@ wsl --install
 
 ```
 winget update --all
-winget install 
-    Vscode
-    Canonical.Ubuntu.2204
-    Debian.Debian
-    whitewaterfoundry.fedora-remix-for-wsl
-    Docker.DockerDesktop
-    DominikReichl.KeePass
-    Microsoft.msmpisdk  
-    Microsoft.PowerShell             
-    --id Starship.Starship
-    chrisant996.Clink 
-    7zip.7zip
-    cURL.cURL
-    Neovim.Neovim
-    OpenJS.NodeJS
-    dbrgn.tealdeer
-    LLVM.LLVM
-    Google.Chrome 
-    Docker.DockerDesktop 
-
+winget install {configs[winget_packages]}
+    
 ```
+
 # install scoop
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
-# Scoop programs: 
-    1. Ffmpeg
-    2. Ninja
     
 # choco packages:
     1. TODO 
@@ -54,7 +35,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
     eval"$(starship init bash)"
     ```
     Cmd: 
-    %LocalAppData%\clink\starship.lua with the following contents: C:\Users\ezraameri\AppData\Local\clinkstarship.lua
+    %LocalAppData%\clink\starship.lua with the following contents: C:\Users\ezraameri\AppData\Local\clink\starship.lua
     load(io.popen('starship init cmd'):read("*a"))()
     
     Powershell:
@@ -113,4 +94,42 @@ do this then add and commit the files
  git lfs track "*.jpg"
  git lfs track "*.png"
  
+```
+
+# visual studio 
+
+1. install visvim
+2. install theme catpuchin
+
+# fonts 
+
+[github nerdfonts](https://github.com/ryanoasis/nerd-fonts/tags)
+[comic sans](https://github.com/xtevenx/ComicMonoNF)
+
+# conda 
+
+## install 
+
+update path 
+%LOCALAPPDATA%/miniconda3
+%LOCALAPPDATA%/miniconda3/scripts
+%LOCALAPPDATA%/miniconda3/library/bin
+
+```
+conda update conda
+Conda init cmd.exe
+Conda init powershell
+
+```
+
+hit: "modified      HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoRun"
+
+## uninstall 
+
+```
+conda install anaconda-clean
+anaconda-clean
+uninstall 
+fix command prompt issue
+C:\Windows\System32\reg.exe DELETE "HKCU\Software\Microsoft\Command Processor" /v AutoRun /f
 ```
