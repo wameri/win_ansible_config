@@ -93,6 +93,7 @@ do this then add and commit the files
  git lfs install
  git lfs track "*.jpg"
  git lfs track "*.png"
+ git lfs pull
  
 ```
 
