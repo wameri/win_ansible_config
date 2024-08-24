@@ -27,6 +27,7 @@ def main(args):
             shutil.move(target, backup_fn) 
 
         # symlink
+        os.makedirs(os.path.dirname(target), exist_ok=True)
         os.symlink(source, target)    
 
 

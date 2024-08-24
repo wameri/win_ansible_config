@@ -39,6 +39,15 @@
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "args": []
+        },
+        {
+            "name": "005_fonts",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\01_bin\\005_flatten_fonts.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "args": []
         }
     ]
 }
