@@ -9,6 +9,8 @@ dotfiles_links:
   target: ~/.bash_profile
 - source: .gitconfig
   target: ~/.gitconfig
+- source: .gitconfig_local
+  target: ~/.gitconfig_local
 - source: .condarc
   target: ~/.condarc
 - source: init.vim
@@ -17,6 +19,7 @@ dotfiles_links:
   target: ~/AppData/Local/nvim/ginit.vim
 - source: Microsoft.PowerShell_profile.ps1
   target: ~/onedrive_ezraameri/OneDrive - Microsoft/Documents/PowerShell/Microsoft.PowerShell_profile.ps1
+  name: powershell_profile
 - source: starship.lua
   target: ~/AppData/Local/clink/starship.lua
 - source: starship.toml
