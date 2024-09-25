@@ -24,10 +24,14 @@ dotfiles_links:
   target: ~/AppData/Local/clink/starship.lua
 - source: starship.toml
   target: ~/.config\starship.toml
-- source: vscode_settings.json
+- source: config/vscode/vscode_settings.json
   target: ~/AppData/Roaming/Code/User/settings.json
+- source: config/vscode/vscode_css_style.css
+  target: ~/AppData/Roaming/Code/User/vscode_css_style.css
 - source: winterminal.json
   target: ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+- source: config/obsidian/plugins/obsidian-style-settings
+  target: 'C:/data/3_resources/20-29_workspace/20.01_my_wiki/.obsidian/plugins/obsidian-style-settings/data.json'
 scoope_packages:
 - Ffmpeg
 - Ninja
