@@ -21,13 +21,24 @@ def run_cmd(cmd, shell=True, cur_dir="."):
 
 
 def main(args):
+
+    parrent_dir = os.path.abspath("..")
+    for dirname in os.listdir(parrent_dir):
+        work_dir = os.path.join(parrent_dir, dirname)
+        if os.path.isdir(work_dir):
+
+            if ".git" not in os.listdir(work_dir):
+                break
+            print("git dir: ", dirname)
+            process_dir(work_dir)
+
+
+def process_dir(cur_dir):
     if args.git_pull:
-        cur_dir = os.path.abspath(".")
         git_pull_cmd = ["git pull"]
         run_cmd(git_pull_cmd, cur_dir=cur_dir)
 
     if args.git_push:
-        cur_dir = os.path.abspath(".")
         git_add_cmd = "git add ."
         run_cmd(git_add_cmd)
 
