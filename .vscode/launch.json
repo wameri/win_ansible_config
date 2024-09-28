@@ -48,6 +48,15 @@
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "args": []
+        },
+        {
+            "name": "006_git_toos",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/01_bin/006_git_tools.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "args": []
         }
     ]
 }
