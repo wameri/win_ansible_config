@@ -21,7 +21,10 @@ def main(args):
         new_ones = set()
         for client in team_clients:
             cmd_list_ext = f"{client} --list-extensions"
-            out_txt = subprocess.check_output(cmd_list_ext.split(), shell=True)
+            if sys.platform == "darwin":
+                out_txt = subprocess.check_output(cmd_list_ext.split())
+            else:
+                out_txt = subprocess.check_output(cmd_list_ext.split(), shell=True)
 
             for line in out_txt.decode("utf-8").split("\n"):
                 if line == "":

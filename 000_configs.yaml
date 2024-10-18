@@ -17,9 +17,9 @@ dotfiles_links:
   target: ~/AppData/Local/nvim/init.vim
 - source: ginit.vim
   target: ~/AppData/Local/nvim/ginit.vim
-- source: Microsoft.PowerShell_profile.ps1
+- name: powershell_profile
+  source: Microsoft.PowerShell_profile.ps1
   target: ~/onedrive_ezraameri/OneDrive - Microsoft/Documents/PowerShell/Microsoft.PowerShell_profile.ps1
-  name: powershell_profile
 - source: starship.lua
   target: ~/AppData/Local/clink/starship.lua
 - source: starship.toml
@@ -31,17 +31,24 @@ dotfiles_links:
 - source: winterminal.json
   target: ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 - source: config/obsidian/plugins/obsidian-style-settings
-  target: 'C:/data/3_resources/20-29_workspace/20.01_my_wiki/.obsidian/plugins/obsidian-style-settings/data.json'
+  target: C:/data/3_resources/20-29_workspace/20.01_my_wiki/.obsidian/plugins/obsidian-style-settings/data.json
 scoope_packages:
 - Ffmpeg
 - Ninja
 - innounp
 - dark
 vscode_extensions:
+- adpyke.codesnap
+- akamud.vscode-theme-onedark
+- akamud.vscode-theme-onelight
+- andrewmarkle.primer-light
 - asvetliakov.vscode-neovim
+- be5invis.vscode-custom-css
+- bencoleman.armview
 - bubersson.theme-hop-light
 - cs128.cs128-clang-tidy
 - cschlosser.doxdocgen
+- davidanson.vscode-markdownlint
 - davidbwaters.macos-modern-theme
 - docsmsft.docs-yaml
 - donjayamanne.githistory
@@ -49,6 +56,7 @@ vscode_extensions:
 - dracula-theme.theme-dracula
 - eamodio.gitlens
 - easyaspi314.macos-theme
+- emilast.logfilehighlighter
 - enkia.tokyo-night
 - evan-buss.font-switcher
 - fehey.brackets-light-pro
@@ -71,9 +79,21 @@ vscode_extensions:
 - meezilla.json
 - metaphore.kanagawa-vscode-color-theme
 - mhutchie.git-graph
+- mikestead.dotenv
+- ms-azure-devops.azure-pipelines
+- ms-azuretools.azure-dev
+- ms-azuretools.vscode-azureappservice
+- ms-azuretools.vscode-azurecontainerapps
+- ms-azuretools.vscode-azurefunctions
 - ms-azuretools.vscode-azureresourcegroups
+- ms-azuretools.vscode-azurestaticwebapps
+- ms-azuretools.vscode-azurestorage
+- ms-azuretools.vscode-azurevirtualmachines
+- ms-azuretools.vscode-bicep
+- ms-azuretools.vscode-cosmosdb
 - ms-azuretools.vscode-docker
 - ms-dotnettools.vscode-dotnet-runtime
+- ms-kubernetes-tools.vscode-kubernetes-tools
 - ms-python.black-formatter
 - ms-python.debugpy
 - ms-python.isort
@@ -101,6 +121,7 @@ vscode_extensions:
 - ms-vscode.anycode-rust
 - ms-vscode.anycode-typescript
 - ms-vscode.azure-account
+- ms-vscode.azurecli
 - ms-vscode.cmake-tools
 - ms-vscode.cpptools
 - ms-vscode.cpptools-extension-pack
@@ -112,24 +133,36 @@ vscode_extensions:
 - ms-vscode.theme-3024kit
 - ms-vscode.theme-markdownkit
 - ms-vscode.theme-materialkit
+- ms-vscode.vscode-node-azure-pack
+- msazurermtools.azurerm-vscode-tools
 - msrvida.vscode-sanddance
+- naumovs.color-highlight
 - nilssoderman.batch-runner
 - njpwerner.autodocstring
 - pkief.material-icon-theme
 - redhat.vscode-yaml
+- remisa.shellman
 - richie5um2.vscode-sort-json
+- rogalmic.bash-debug
 - rosshamish.kuskus-kusto-language-server
 - rosshamish.kuskus-kusto-syntax-highlighting
+- samuelcolvin.jinjahtml
 - shd101wyy.markdown-preview-enhanced
 - shortarrow.line-number-deco
 - sumitsaha.learn-with-sumit-theme
+- tamasfe.even-better-toml
 - teabyii.ayu
+- timonwong.shellcheck
 - tokyo-night.nvtokyo
 - twxs.cmake
+- tyriar.sort-lines
+- ullissescastro.theme-bracketslight
 - uloco.theme-bluloco-dark
 - uloco.theme-bluloco-light
+- vortizhe.simple-ruby-erb
 - vscode-icons-team.vscode-icons
 - wholroyd.jinja
+- zaaack.markdown-editor
 win_background_configs:
   font_name: Space Mono Nerd Font Complete Windows Compatible.ttf
   font_size: 100
