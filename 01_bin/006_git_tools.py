@@ -37,6 +37,15 @@ def main(args):
 
 
 def process_dir(cur_dir):
+
+    if args.git_commit:
+        git_add_cmd = "git add ."
+        run_cmd(git_add_cmd, cur_dir=cur_dir)
+
+        time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        git_commit_cmd = f'git commit -m "auto {time}"'
+        run_cmd(git_commit_cmd, cur_dir=cur_dir)
+
     if args.git_pull:
         git_pull_cmd = ["git pull"]
         run_cmd(git_pull_cmd, cur_dir=cur_dir)
@@ -46,7 +55,7 @@ def process_dir(cur_dir):
         run_cmd(git_add_cmd, cur_dir=cur_dir)
 
         time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        git_commit_cmd = f"git commit -m 'auto {time}'"
+        git_commit_cmd = f'git commit -m "auto {time}"'
         run_cmd(git_commit_cmd, cur_dir=cur_dir)
 
         git_push_cmd = "git push"
@@ -55,6 +64,7 @@ def process_dir(cur_dir):
 
 def parse_args():
     parser = AP()
+    parser.add_argument("--git_commit", type=bool, default=True)
     parser.add_argument("--git_pull", type=bool, default=True)
     parser.add_argument("--git_push", type=bool, default=True)
     return parser.parse_args()

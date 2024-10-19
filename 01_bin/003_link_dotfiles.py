@@ -30,13 +30,13 @@ def main(args):
 
     dotfiles_dir = config["dotfiles_configs"]["dotfiles_dir"]
     for dotfile in config["dotfiles_links"]:
-        source = os.path.join(dotfiles_dir, dotfile["source"])
+        source = os.path.normcase(os.path.join(dotfiles_dir, dotfile["source"]))
         if not os.path.exists(source):
             print(f"source {source} does not exist")
             with open(source, "w") as f:
                 f.write("")
             continue
-        target = dotfile["target"] if  not dotfile["target"].startswith("~") else os.path.expanduser(dotfile["target"])
+        target = os.path.normcase(dotfile["target"] if  not dotfile["target"].startswith("~") else os.path.expanduser(dotfile["target"]))
         if os.path.exists(target):
             print(f"target {target} already exists")
             backup_dir = os.path.join(dotfiles_dir, "backup")

@@ -69,3 +69,4 @@ if __name__ == "__main__":
     args = parse_args()
 
     main(args)
+    # run from command prompt in windows dev.
