@@ -16,7 +16,11 @@ def run_cmd(cmd, shell=True, cur_dir=None):
         print("Running command: ", cmd)
         cur_dir = os.path.abspath(cur_dir if cur_dir else ".")
         print("Current dir: ", cur_dir)
-        out_txt = subprocess.check_output(cmd, shell=shell, cwd=cur_dir if cur_dir else ".")
+        if sys.platform == "darwin":
+            out_txt = subprocess.check_output(cmd.split(), cwd=cur_dir if cur_dir else ".")
+        else:
+            out_txt = subprocess.check_output(cmd.split(), shell=shell, cwd=cur_dir if cur_dir else ".")
+
         for line in out_txt.decode("utf-8").split("\n"):
             print(line)
     except subprocess.CalledProcessError as e:
@@ -42,12 +46,12 @@ def process_dir(cur_dir):
         git_add_cmd = "git add ."
         run_cmd(git_add_cmd, cur_dir=cur_dir)
 
-        time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        git_commit_cmd = f'git commit -m "auto {time}"'
+        time = datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+        git_commit_cmd = f'git commit -m "auto_{time}"'
         run_cmd(git_commit_cmd, cur_dir=cur_dir)
 
     if args.git_pull:
-        git_pull_cmd = ["git pull"]
+        git_pull_cmd = "git pull"
         run_cmd(git_pull_cmd, cur_dir=cur_dir)
 
     if args.git_push:
