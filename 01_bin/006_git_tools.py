@@ -51,7 +51,7 @@ def process_dir(cur_dir):
         run_cmd(git_commit_cmd, cur_dir=cur_dir)
 
     if args.git_pull:
-        git_pull_cmd = "git pull"
+        git_pull_cmd = "git pull --rebase"
         run_cmd(git_pull_cmd, cur_dir=cur_dir)
 
     if args.git_push:
@@ -68,7 +68,7 @@ def process_dir(cur_dir):
 
 def parse_args():
     parser = AP()
-    parser.add_argument("--git_commit", type=bool, default=True)
+    parser.add_argument("--git_commit", type=bool, default=False)
     parser.add_argument("--git_pull", type=bool, default=True)
     parser.add_argument("--git_push", type=bool, default=True)
     return parser.parse_args()
