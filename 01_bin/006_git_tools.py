@@ -58,8 +58,8 @@ def process_dir(cur_dir):
         git_add_cmd = "git add ."
         run_cmd(git_add_cmd, cur_dir=cur_dir)
 
-        time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        git_commit_cmd = f'git commit -m "auto {time}"'
+        time = datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+        git_commit_cmd = f'git commit -m "auto_{time}"'
         run_cmd(git_commit_cmd, cur_dir=cur_dir)
 
         git_push_cmd = "git push"
