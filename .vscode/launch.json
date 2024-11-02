@@ -15,7 +15,7 @@
             "name": "002_vscode",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}\\01_bin\\002_vscode.py",
+            "program": "${workspaceFolder}/01_bin/002_vscode.py",
             "cwd": "${workspaceFolder}", 
             "console": "integratedTerminal",
             "args":[
@@ -63,6 +63,15 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/01_bin/006_git_tools.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "args": []
+        },
+        {
+            "name": "007_install_custom_themes",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/01_bin/007_install_custom_themes.py",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "args": []

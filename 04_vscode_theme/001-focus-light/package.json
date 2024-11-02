@@ -1,0 +1,21 @@
+{
+  "name": "001-focus-light",
+  "displayName": "001_focus_light",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "001_focus_light",
+        "uiTheme": "vs",
+        "path": "./themes/001_focus_light-color-theme.json"
+      }
+    ]
+  }
+}
