@@ -30,6 +30,20 @@ def run_cmd(cmd, shell=True, cur_dir=None):
 def main(args):
 
     parrent_dir = os.path.abspath("..")
+    other_git_repos = {
+        "20.02_win_dotfiles":"https://github.com/wameri/win_dotfiles.git",
+        "20.04_mac_dotfiles":"https://github.com/wameri/mac_dotfiles.git",
+        "20.05_mac_ansible_config":"https://github.com/wameri/mac_ansible_config.git",
+        "20.01_my_wiki":"https://github.com/wameri/wiki.git",
+    }
+    for git_repo_name , git_repo_url in other_git_repos.items():
+        repo_dir = os.path.join(parrent_dir, git_repo_name)
+        if os.path.exists(repo_dir):
+            continue
+        cmd_clone = f'git clone {git_repo_url} {git_repo_name}'
+        run_cmd(cmd_clone, cur_dir=parrent_dir)
+        
+
     for dirname in os.listdir(parrent_dir):
         work_dir = os.path.join(parrent_dir, dirname)
         if os.path.isdir(work_dir):

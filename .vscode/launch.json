@@ -2,6 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "000_bootstrap",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\01_bin\\000_bootstrap.py",
+            "cwd": "${workspaceFolder}", 
+            "console": "integratedTerminal",
+            "args":[
+            ]
+        },
+
+        {
             "name": "001_win_background",
             "type": "debugpy",
             "request": "launch",
@@ -12,7 +23,7 @@
             ]
         },
         {
-            "name": "002_vscode",
+            "name": "003_vscode",
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/01_bin/002_vscode.py",
@@ -22,7 +33,7 @@
             ]
         },
         {
-            "name": "003_link_dotfiles",
+            "name": "002_link_dotfiles",
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}\\01_bin\\003_link_dotfiles.py",
@@ -50,7 +61,7 @@
             "args": []
         },
         {
-            "name": "006_git_tools (Win)",
+            "name": "001_git_tools (Win)",
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}\\01_bin\\006_git_tools.py",

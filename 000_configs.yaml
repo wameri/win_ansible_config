@@ -221,29 +221,53 @@ win_backgrounds:
 - image: 02_assets/01_green/wengang-zhai-YcCcz50xI64-unsplash.jpg
   name: 'Learn  '
 winget_packages:
-- Vscode
-- Canonical.Ubuntu.2204
-- Debian.Debian
-- whitewaterfoundry.fedora-remix-for-wsl
-- Docker.DockerDesktop
-- DominikReichl.KeePass
-- Microsoft.msmpisdk
-- Microsoft.PowerShell
-- Starship.Starship
-- chrisant996.Clink
-- 7zip.7zip
-- cURL.cURL
-- Neovim.Neovim
-- OpenJS.NodeJS
-- dbrgn.tealdeer
-- LLVM.LLVM
-- Google.Chrome
-- Docker.DockerDesktop
-- DEVCOM.JetBrainsMonoNerdFont
-- Microsoft.PowerToys
-- LutzRoeder.Netron
-- Microsoft.WindowsTerminal
-- Git.Git
-- Obsidian.Obsidian
-- Anaconda.Miniconda3
-- clink
+- name: Vscode
+  state: null
+- name: Canonical.Ubuntu.2204
+  state: null
+- name: Debian.Debian
+  state: null
+- name: whitewaterfoundry.fedora-remix-for-wsl
+  state: null
+- name: Docker.DockerDesktop
+  state: null
+- name: DominikReichl.KeePass
+  state: null
+- name: Microsoft.msmpisdk
+  state: install
+- name: Microsoft.PowerShell
+  state: install
+- name: Starship.Starship
+  state: install
+- name: chrisant996.Clink
+  state: install
+- name: 7zip.7zip
+  state: null
+- name: cURL.cURL
+  state: null
+- name: Neovim.Neovim
+  state: install
+- name: OpenJS.NodeJS
+  state: install
+- name: dbrgn.tealdeer
+  state: install
+- name: LLVM.LLVM
+  state: install
+- name: Google.Chrome
+  state: null
+- name: DEVCOM.JetBrainsMonoNerdFont
+  state: null
+- name: Microsoft.PowerToys
+  state: install
+- name: LutzRoeder.Netron
+  state: install
+- name: Microsoft.WindowsTerminal
+  state: null
+- name: Git.Git
+  state: null
+- name: Obsidian.Obsidian
+  state: null
+- name: Anaconda.Miniconda3
+  state: null
+- name: equalsraf.neovim-qt
+  state: install
