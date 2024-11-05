@@ -13,8 +13,10 @@ from argparse import ArgumentParser as AP
 def main():
     if sys.platform == "darwin":
         extension_dir = os.path.expanduser("~/.vscode/extensions")
-    else:
-        extension_dir = os.path.expanduser("~/.vscode-server/extensions")
+    elif sys.platform == "win32" and os.path.exists("C:\.tools\.vscode\extensions"):
+        extension_dir = os.path.expanduser("C:\.tools\.vscode\extensions")
+    elif sys.platform == "win32" and os.path.expanduser("~\\.vscode\\extensions"):
+        extension_dir = os.path.expanduser("~\\.vscode\\extensions")
     source_dir = os.path.abspath("04_vscode_theme")
     for dn in os.listdir(source_dir):
         theme_dir = os.path.join(source_dir, dn)
