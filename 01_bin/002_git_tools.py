@@ -56,6 +56,11 @@ def main(args):
 
 def process_dir(cur_dir):
 
+    git_config_email = "git config --local user.email 'work.ameri@gmail.com'"
+    run_cmd(git_config_email, cur_dir=cur_dir)
+    git_config_name = "git config --local user.name 'Ezra Ameri'"
+    run_cmd(git_config_name, cur_dir=cur_dir)
+
     if args.git_commit:
         git_add_cmd = "git add ."
         run_cmd(git_add_cmd, cur_dir=cur_dir)

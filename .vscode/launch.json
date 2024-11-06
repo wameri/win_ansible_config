@@ -2,87 +2,82 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "000_bootstrap",
+            "name": "001_bootstrap",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}\\01_bin\\000_bootstrap.py",
-            "cwd": "${workspaceFolder}", 
+            "program": "${workspaceFolder}\\01_bin\\001_bootstrap.py",
+            "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
-            "args":[
-            ]
+            "args": []
         },
-
         {
-            "name": "001_win_background",
+            "name": "002_git_tools (Win)",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}\\01_bin\\001_win_background.py",
-            "cwd": "${workspaceFolder}", 
+            "program": "${workspaceFolder}\\01_bin\\002_git_tools.py",
+            "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
-            "args":[
-            ]
+            "args": []
         },
         {
-            "name": "003_vscode",
+            "name": "002_git_tools (Mac)",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/01_bin/002_vscode.py",
-            "cwd": "${workspaceFolder}", 
+            "program": "${workspaceFolder}/01_bin/002_git_tools.py",
+            "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
-            "args":[
-            ]
+            "args": []
         },
         {
-            "name": "002_link_dotfiles",
+            "name": "003_link_dotfiles",
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}\\01_bin\\003_link_dotfiles.py",
-            "cwd": "${workspaceFolder}", 
-            "console": "integratedTerminal",
-            "args":[
-            ]
-        },
-        {
-            "name": "004_conda",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${workspaceFolder}\\01_bin\\004_conda.py",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "args": []
         },
         {
-            "name": "005_fonts",
+            "name": "004_vscode",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}\\01_bin\\005_flatten_fonts.py",
+            "program": "${workspaceFolder}/01_bin/004_vscode.py",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "args": []
         },
         {
-            "name": "001_git_tools (Win)",
+            "name": "005_install_custom_themes",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}\\01_bin\\006_git_tools.py",
+            "program": "${workspaceFolder}/01_bin/005_install_custom_themes.py",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "args": []
         },
         {
-            "name": "006_git_tools (Mac)",
+            "name": "006_fonts",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/01_bin/006_git_tools.py",
+            "program": "${workspaceFolder}\\01_bin\\006_flatten_fonts.py",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "args": []
         },
         {
-            "name": "007_install_custom_themes",
+            "name": "007_conda",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/01_bin/007_install_custom_themes.py",
+            "program": "${workspaceFolder}\\01_bin\\007_conda.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "args": []
+        },
+        {
+            "name": "008_win_background",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\01_bin\\008_win_background.py",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "args": []

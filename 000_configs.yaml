@@ -221,7 +221,7 @@ win_backgrounds:
 - image: 02_assets/01_green/wengang-zhai-YcCcz50xI64-unsplash.jpg
   name: 'Learn  '
 winget_packages:
-- name: Vscode
+- name: Microsoft.VisualStudioCode
   state: null
 - name: Canonical.Ubuntu.2204
   state: null

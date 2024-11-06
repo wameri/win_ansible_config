@@ -39,14 +39,16 @@ def main(args):
         for client in team_clients:
             for extension in config["vscode_extensions"]:
                 print(extension)
-                cmd_uninstall = f"{client} --uninstall-extension"
-                cmd_uninstall_one = f"{cmd_uninstall} {extension}"
-                try:
-                    out_txt = subprocess.check_output(cmd_uninstall_one.split(), shell=True)
-                    print("command", cmd_uninstall_one)
-                    print("output", out_txt.decode("utf-8"))
-                except Exception as e:
-                    print("error: ", e)
+                if args.clean_install == "True":
+                    cmd_uninstall = f"{client} --uninstall-extension"
+                    cmd_uninstall_one = f"{cmd_uninstall} {extension}"
+                    try:
+                        out_txt = subprocess.check_output(cmd_uninstall_one.split(), shell=True)
+                        print("command", cmd_uninstall_one)
+                        print("output", out_txt.decode("utf-8"))
+                    except Exception as e:
+                        print("error: ", e)
+
                 cmd_install = f"{client} --install-extension"
                 cmd_install_one = f"{cmd_install} {extension}"
                 try:
@@ -61,6 +63,7 @@ def parse_args():
     parser = AP()
     parser.add_argument("--config", type=str, default="000_configs.yaml")
     parser.add_argument("--install", type=str, default="True")
+    parser.add_argument("--clean_install", type=str, default="False")
     parser.add_argument("--update_list", type=str, default="True")
     return parser.parse_args()
 

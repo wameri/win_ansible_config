@@ -1,0 +1,7 @@
+dotfiles_configs:
+  dotfiles_dir: C:\data\03_resources\20-29_workspace\20.02_win_dotfiles
+
+dotfiles_links:
+ - source: Microsoft.PowerShell_profile.ps1
+   target: C:\Users\ezraameri\OneDrive - Microsoft/Documents/PowerShell/Microsoft.PowerShell_profile.ps1
+   name: powershell_profile
