@@ -313,13 +313,13 @@
         "notificationCenterHeader.background": "#f2edde",
         "notificationCenterHeader.foreground": "#005661",
         "notificationLink.foreground": "#005661",
+        "notificationToast.border": "#f2edde",
         "notifications.background": "#e5e5e0",
         "notifications.border": "#f2edde",
         "notifications.foreground": "#005661",
         "notificationsErrorIcon.foreground": "#b4637a",
         "notificationsInfoIcon.foreground": "#56949f",
         "notificationsWarningIcon.foreground": "#ea9d34",
-        "notificationToast.border": "#f2edde",
         "panel.background": "#f9f9f9",
         "panel.border": "#d7d7d7",
         "panel.dropBorder": "#f2e9e1",
@@ -456,30 +456,30 @@
         "tab.unfocusedInactiveBackground": "#00000000",
         "tab.unfocusedInactiveForeground": "#888477",
         "tab.unfocusedInactiveModifiedBorder": "#56949f80",
-        "terminal.ansiBlack": "#000000",
-        "terminal.ansiBlue": "#007db3",
-        "terminal.ansiBrightBlack": "#000000",
-        "terminal.ansiBrightBlue": "#0096c3",
-        "terminal.ansiBrightCyan": "#6be4e6",
-        "terminal.ansiBrightGreen": "#009100",
-        "terminal.ansiBrightMagenta": "#f075b5",
-        "terminal.ansiBrightRed": "#ec6a88",
-        "terminal.ansiBrightWhite": "#ffffff",
-        "terminal.ansiBrightYellow": "#b95c00",
-        "terminal.ansiCyan": "#59e1e3",
-        "terminal.ansiGreen": "#005800",
-        "terminal.ansiMagenta": "#ee64ac",
-        "terminal.ansiRed": "#e95678",
-        "terminal.ansiWhite": "#ffffff",
-        "terminal.ansiYellow": "#f3853c",
-        "terminal.background": "#f7f7f7",
+        "terminal.ansiBlack": "#FFFFFF",
+        "terminal.ansiBlue": "#0C9FCE",
+        "terminal.ansiBrightBlack": "#CCCCCC",
+        "terminal.ansiBrightBlue": "#8ABFD1",
+        "terminal.ansiBrightCyan": "#9BB4BE",
+        "terminal.ansiBrightGreen": "#2198ad",
+        "terminal.ansiBrightMagenta": "#FFD4E0",
+        "terminal.ansiBrightRed": "#F3BFB2",
+        "terminal.ansiBrightWhite": "#888080",
+        "terminal.ansiBrightYellow": "#F7DEBA",
+        "terminal.ansiCyan": "#286983",
+        "terminal.ansiGreen": "#56949F",
+        "terminal.ansiMagenta": "#B4637A",
+        "terminal.ansiRed": "#DD7F67",
+        "terminal.ansiWhite": "#2E2E2E",
+        "terminal.ansiYellow": "#EA9D34",
+        "terminal.background": "#EEE6DD",
         "terminal.border": "#666666",
         "terminal.dropBackground": "#6e6a8614",
-        "terminal.foreground": "#3b2026",
-        "terminal.selectionBackground": "#6c6f934d",
+        "terminal.foreground": "#000000",
+        "terminal.selectionBackground": "#424242",
         "terminal.tab.activeBorder": "#575279",
         "terminalCursor.background": "#3b202600",
-        "terminalCursor.foreground": "#adadad",
+        "terminalCursor.foreground": "#050505",
         "textBlockQuote.background": "#f9f1e1",
         "textBlockQuote.border": "#00899e",
         "textCodeBlock.background": "#f9f1e1",
@@ -603,8 +603,8 @@
                 "entity.other.inherited-class"
             ],
             "settings": {
-                "foreground": "#907AA9",
-                "fontStyle": "italic"
+                "fontStyle": "italic",
+                "foreground": "#907AA9"
             }
         },
         {
@@ -745,8 +745,8 @@
         {
             "scope": "meta.directive.vue",
             "settings": {
-                "foreground": "#907AA9",
-                "fontStyle": "italic"
+                "fontStyle": "italic",
+                "foreground": "#907AA9"
             }
         },
         {
@@ -837,8 +837,8 @@
                 "support.function"
             ],
             "settings": {
-                "foreground": "#B4637A",
-                "fontStyle": "italic"
+                "fontStyle": "italic",
+                "foreground": "#B4637A"
             }
         },
         {
