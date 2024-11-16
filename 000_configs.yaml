@@ -30,8 +30,8 @@ dotfiles_links:
   target: ~/AppData/Roaming/Code/User/vscode_css_style.css
 - source: winterminal.json
   target: ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
-- source: config/obsidian/plugins/obsidian-style-settings
-  target: C:/data/3_resources/20-29_workspace/20.01_my_wiki/.obsidian/plugins/obsidian-style-settings/data.json
+- source: config/obsidian
+  target: C:/data/3_resources/20-29_workspace/20.01_my_wiki/.obsidian
 scoope_packages:
 - Ffmpeg
 - Ninja
