@@ -5,7 +5,7 @@ import subprocess
 import time
 import random
 
-import yaml
+# import yaml
 import datetime
 
 from argparse import ArgumentParser as AP
