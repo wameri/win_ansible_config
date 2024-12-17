@@ -38,7 +38,7 @@ def main(args):
     }
     for git_repo_name , git_repo_url in other_git_repos.items():
         repo_dir = os.path.join(parrent_dir, git_repo_name)
-        if os.path.exists(repo_dir):
+        if os.path.exists(repo_dir) and os.path.exists(os.path.join(repo_dir, ".git")):
             continue
         cmd_clone = f'git clone {git_repo_url} {git_repo_name}'
         run_cmd(cmd_clone, cur_dir=parrent_dir)
