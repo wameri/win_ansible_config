@@ -38,11 +38,20 @@ def main(args):
     }
     for git_repo_name , git_repo_url in other_git_repos.items():
         repo_dir = os.path.join(parrent_dir, git_repo_name)
-        if os.path.exists(repo_dir) and os.path.exists(os.path.join(repo_dir, ".git")):
+        if os.path.exists(os.path.join(repo_dir, ".git")):
             continue
+
+        dirty_files = ""
+        if os.path.exists(repo_dir):
+            dirty_files = repo_dir + "_" + time.strftime("%Y%m%d-%H%M%S")
+            shutil.move(repo_dir, dirty_files)
         cmd_clone = f'git clone {git_repo_url} {git_repo_name}'
         run_cmd(cmd_clone, cur_dir=parrent_dir)
-        
+        if dirty_files:
+            for file in os.listdir(dirty_files):
+                file_path = os.path.join(dirty_files, file)
+                shutil.move(file_path, repo_dir)
+            shutil.rmtree(dirty_files)
 
     for dirname in os.listdir(parrent_dir):
         work_dir = os.path.join(parrent_dir, dirname)
