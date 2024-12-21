@@ -1,21 +1,29 @@
 {
-  "name": "ezra-calm-paper",
-  "displayName": "ezra_calm_paper",
-  "description": "based on Noctis lux theme",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.95.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "ezra-calm-paper",
-        "uiTheme": "vs",
-        "path": "./themes/ezra-calm-paper-color-theme.json"
-      }
-    ]
-  }
+    "__metadata": {
+        "size": 66067
+    },
+    "author": {
+        "email": "ezra.amerii@gmail.com",
+        "name": "ezra ameri"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "ezra-calm-paper",
+                "path": "./themes/ezra-calm-paper-color-theme.json",
+                "uiTheme": "vs"
+            }
+        ]
+    },
+    "description": "based on Noctis lux theme",
+    "displayName": "ezra_calm_paper",
+    "engines": {
+        "vscode": "^1.96.0"
+    },
+    "name": "ezra-calm-paper",
+    "publisher": "ezra ameri",
+    "version": "0.0.1"
 }

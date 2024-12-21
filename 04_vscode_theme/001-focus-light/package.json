@@ -1,21 +1,29 @@
 {
-  "name": "001-focus-light",
-  "displayName": "001_focus_light",
-  "description": "",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.95.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "001_focus_light",
-        "uiTheme": "vs",
-        "path": "./themes/001_focus_light-color-theme.json"
-      }
-    ]
-  }
+    "__metadata": {
+        "size": 7986
+    },
+    "author": {
+        "email": "ezra.amerii@gmail.com",
+        "name": "ezra ameri"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "001_focus_light",
+                "path": "./themes/001_focus_light-color-theme.json",
+                "uiTheme": "vs"
+            }
+        ]
+    },
+    "description": "",
+    "displayName": "001_focus_light",
+    "engines": {
+        "vscode": "^1.96.0"
+    },
+    "name": "001-focus-light",
+    "publisher": "ezra ameri",
+    "version": "0.0.1"
 }
