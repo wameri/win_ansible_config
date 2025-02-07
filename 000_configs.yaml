@@ -143,7 +143,6 @@ vscode_extensions:
 - ms-vscode.anycode-python
 - ms-vscode.anycode-rust
 - ms-vscode.anycode-typescript
-- ms-vscode.azure-account
 - ms-vscode.azurecli
 - ms-vscode.cmake-tools
 - ms-vscode.cpptools
