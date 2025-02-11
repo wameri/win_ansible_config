@@ -1,0 +1,29 @@
+{
+    "__metadata": {
+        "size": 7986
+    },
+    "author": {
+        "email": "ezra.amerii@gmail.com",
+        "name": "ezra ameri"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "003-ezra-cat-latte",
+                "path": "./themes/003-ezra-cat-latte-color-theme.json",
+                "uiTheme": "vs"
+            }
+        ]
+    },
+    "description": "",
+    "displayName": "003-ezra-cat-latte",
+    "engines": {
+        "vscode": "^1.96.0"
+    },
+    "name": "003-ezra-cat-latte",
+    "publisher": "ezra ameri",
+    "version": "0.0.1"
+}

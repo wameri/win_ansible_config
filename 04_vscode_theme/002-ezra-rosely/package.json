@@ -1,0 +1,29 @@
+{
+    "__metadata": {
+        "size": 7986
+    },
+    "author": {
+        "email": "ezra.amerii@gmail.com",
+        "name": "ezra ameri"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "002-ezra-rosely",
+                "path": "./themes/002-ezra-rosely-color-theme.json",
+                "uiTheme": "vs"
+            }
+        ]
+    },
+    "description": "",
+    "displayName": "002-ezra-rosely",
+    "engines": {
+        "vscode": "^1.96.0"
+    },
+    "name": "002-ezra-rosely",
+    "publisher": "ezra ameri",
+    "version": "0.0.1"
+}
