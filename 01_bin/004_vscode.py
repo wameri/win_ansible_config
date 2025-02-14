@@ -29,6 +29,9 @@ def main(args):
             for line in out_txt.decode("utf-8").split("\n"):
                 if line == "":
                     continue
+                if "ezra ameri" in line.lower():
+                    continue
+
                 new_ones.add(line.lower())
         updated_extensions = sorted(list(existing_extensions.union(new_ones)))
         config["vscode_extensions"] = updated_extensions
