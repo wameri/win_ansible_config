@@ -279,3 +279,5 @@ winget_packages:
   state: null
 - name: equalsraf.neovim-qt
   state: install
+- name: FilesCommunity.Files
+  state: install
