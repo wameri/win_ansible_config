@@ -86,7 +86,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#CCCCCC"
+                "foreground": "#ea9d3480"
             }
         },
         {
@@ -94,7 +94,7 @@
             "scope": "comment.block.preprocessor",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#CCCCCC"
+                "foreground": "#ea9d3480"
             }
         },
         {
@@ -104,7 +104,7 @@
                 "comment.block.documentation"
             ],
             "settings": {
-                "foreground": "#56949f"
+                "foreground": "#b4637a"
             }
         },
         {
@@ -149,7 +149,7 @@
                 "variable.language"
             ],
             "settings": {
-                "foreground": "#ea9d34"
+                "foreground": "#907aa9"
             }
         },
         {
@@ -207,14 +207,14 @@
                 "constant"
             ],
             "settings": {
-                "foreground": "#ea9d34"
+                "foreground": "#907aa9"
             }
         },
         {
             "name": "Strings",
             "scope": "string",
             "settings": {
-                "foreground": "#56949f"
+                "foreground": "#b4637a"
             }
         },
         {
@@ -235,7 +235,7 @@
             "name": "Strings: Symbols",
             "scope": "constant.other.symbol",
             "settings": {
-                "foreground": "#ea9d34"
+                "foreground": "#907aa9"
             }
         },
         {
@@ -254,7 +254,7 @@
                 "meta.tag.sgml punctuation.definition.tag.html"
             ],
             "settings": {
-                "foreground": "#CCCCCC"
+                "foreground": "#ea9d3480"
             }
         },
         {
@@ -294,7 +294,7 @@
                 "punctuation.definition.entity"
             ],
             "settings": {
-                "foreground": "#ea9d34"
+                "foreground": "#907aa9"
             }
         },
         {
@@ -316,7 +316,7 @@
                 "support.type.property-name"
             ],
             "settings": {
-                "foreground": "#ea9d34"
+                "foreground": "#907aa9"
             }
         },
         {
@@ -327,7 +327,7 @@
                 "support.constant.property-value"
             ],
             "settings": {
-                "foreground": "#56949f"
+                "foreground": "#b4637a"
             }
         },
         {
@@ -445,7 +445,7 @@
                 "markup.italic"
             ],
             "settings": {
-                "foreground": "#56949f"
+                "foreground": "#b4637a"
             }
         },
         {
@@ -453,7 +453,7 @@
             "scope": "markup.inline.raw",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#ea9d34"
+                "foreground": "#907aa9"
             }
         },
         {
