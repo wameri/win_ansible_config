@@ -1,6 +1,10 @@
-
-import yaml
 import subprocess
+try:
+    import yaml
+except Exception as e:
+    subprocess.check_output("winget install Anaconda.Miniconda3")
+    subprocess.check_output("python -m pip install pyyaml")
+    import yaml
 
 from argparse import ArgumentParser as AP
 
