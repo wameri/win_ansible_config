@@ -35,7 +35,7 @@ hit: "modified      HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoR
 7.install scoop
 
   ```shell
-  Invoke-RestMethod -Uri <https://get.scoop.sh> | Invoke-Expression
+  Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
   ```
 
 8.python scripts

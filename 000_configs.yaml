@@ -122,6 +122,7 @@ vscode_extensions:
 - ms-azuretools.vscode-bicep
 - ms-azuretools.vscode-cosmosdb
 - ms-azuretools.vscode-docker
+- ms-dotnettools.csharp
 - ms-dotnettools.vscode-dotnet-runtime
 - ms-python.black-formatter
 - ms-python.debugpy
@@ -138,6 +139,7 @@ vscode_extensions:
 - ms-vscode-remote.remote-ssh
 - ms-vscode-remote.remote-ssh-edit
 - ms-vscode-remote.remote-wsl
+- ms-vscode-remote.vscode-remote-extensionpack
 - ms-vscode.anycode
 - ms-vscode.anycode-c-sharp
 - ms-vscode.anycode-cpp
@@ -158,6 +160,7 @@ vscode_extensions:
 - ms-vscode.mono-debug
 - ms-vscode.powershell
 - ms-vscode.remote-explorer
+- ms-vscode.remote-server
 - ms-vscode.theme-3024kit
 - ms-vscode.theme-markdownkit
 - ms-vscode.theme-materialkit
@@ -250,7 +253,7 @@ winget_packages:
 - name: chrisant996.Clink
   state: install
 - name: 7zip.7zip
-  state: null
+  state: install
 - name: cURL.cURL
   state: null
 - name: Neovim.Neovim
@@ -262,9 +265,9 @@ winget_packages:
 - name: LLVM.LLVM
   state: install
 - name: Google.Chrome
-  state: null
+  state: install
 - name: DEVCOM.JetBrainsMonoNerdFont
-  state: null
+  state: install
 - name: Microsoft.PowerToys
   state: install
 - name: LutzRoeder.Netron
@@ -274,9 +277,9 @@ winget_packages:
 - name: Git.Git
   state: null
 - name: Obsidian.Obsidian
-  state: null
+  state: install
 - name: Anaconda.Miniconda3
-  state: null
+  state: install
 - name: equalsraf.neovim-qt
   state: install
 - name: FilesCommunity.Files
