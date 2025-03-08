@@ -48,6 +48,7 @@ vscode_extensions:
 - andrewmarkle.primer-light
 - asvetliakov.vscode-neovim
 - ban.spellright
+- bat67.leetcode-extension-pack
 - be5invis.vscode-custom-css
 - benbusby.earthbound-themes
 - bencoleman.armview
@@ -64,6 +65,7 @@ vscode_extensions:
 - ctrlplusb.i-minimal-theme
 - davidanson.vscode-markdownlint
 - davidbwaters.macos-modern-theme
+- divyanshuagrawal.competitive-programming-helper
 - donjayamanne.githistory
 - donjayamanne.kusto
 - dracula-theme.theme-dracula
@@ -78,6 +80,7 @@ vscode_extensions:
 - felicio.vscode-fold
 - felipe-mendes.slack-theme
 - fgcintra.longsight-light-theme
+- formulahendry.code-runner
 - gera2ld.markmap-vscode
 - github.copilot
 - github.copilot-chat
@@ -98,6 +101,7 @@ vscode_extensions:
 - josetr.cmake-language-support-vscode
 - jprestidge.theme-material-theme
 - kevinrose.vsc-python-indent
+- leetcode.vscode-leetcode
 - lextudio.restructuredtext
 - liviuschera.noctis
 - lninl.theme-hbuilderx-soft-green-light
@@ -124,10 +128,12 @@ vscode_extensions:
 - ms-azuretools.vscode-docker
 - ms-dotnettools.csharp
 - ms-dotnettools.vscode-dotnet-runtime
+- ms-kubernetes-tools.vscode-kubernetes-tools
 - ms-python.black-formatter
 - ms-python.debugpy
 - ms-python.python
 - ms-python.vscode-pylance
+- ms-toolsai.datawrangler
 - ms-toolsai.jupyter
 - ms-toolsai.jupyter-keymap
 - ms-toolsai.jupyter-renderers
@@ -174,6 +180,7 @@ vscode_extensions:
 - njpwerner.autodocstring
 - pixl-garden.bongocat
 - pkief.material-icon-theme
+- randomfractalsinc.vscode-data-preview
 - redhat.vscode-yaml
 - remisa.shellman
 - richie5um2.vscode-sort-json
@@ -188,6 +195,7 @@ vscode_extensions:
 - stonec0der.g-dark-theme
 - sumitsaha.learn-with-sumit-theme
 - swyddfa.esbonio
+- syncfusioninc.document-viewer-vscode-extensions
 - tamasfe.even-better-toml
 - tankashing.blinds-theme
 - teabyii.ayu
@@ -206,10 +214,13 @@ vscode_extensions:
 - uloco.theme-bluloco-light
 - vortizhe.simple-ruby-erb
 - vscode-icons-team.vscode-icons
+- wangtao0101.debug-leetcode
 - wholroyd.jinja
 - wraith13.background-phi-colors
 - xadillax.viml
+- xaviercai.vscode-leetcode-cpp-debug
 - yezige.vscode-theme-green-eyecare
+- yy0931.vscode-sqlite3-editor
 - zaaack.markdown-editor
 - zyinmd.sepia
 win_background_configs:
