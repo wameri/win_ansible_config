@@ -48,6 +48,10 @@ hit: "modified      HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoR
 8.6 flatten fonts
 8.7 conda
 
+# llvm
+
+add to system environment path C:\Program Files\LLVM\bin
+
 # Nvim
 
 config file in C:\Users\ezraameri\AppData\Local\nvim\init.nvim
