@@ -111,6 +111,7 @@
             "name": "Invalid - Illegal",
             "scope": "invalid.illegal",
             "settings": {
+                "fontStyle": "bold strikethrough",
                 "foreground": "#b4637a"
             }
         },
@@ -118,7 +119,7 @@
             "name": "Operators",
             "scope": "keyword.operator",
             "settings": {
-                "foreground": "#777777"
+                "foreground": "#EE653A"
             }
         },
         {
@@ -128,7 +129,7 @@
                 "storage"
             ],
             "settings": {
-                "foreground": "#525252"
+                "foreground": "#d6817d"
             }
         },
         {
@@ -138,7 +139,7 @@
                 "support.type"
             ],
             "settings": {
-                "foreground": "#907aa9"
+                "foreground": "#0C9FCE"
             }
         },
         {
@@ -149,7 +150,8 @@
                 "variable.language"
             ],
             "settings": {
-                "foreground": "#907aa9"
+                "fontStyle": "underline",
+                "foreground": "#b4637a"
             }
         },
         {
@@ -159,7 +161,7 @@
                 "support.variable"
             ],
             "settings": {
-                "foreground": "#907aa9"
+                "foreground": "#575279"
             }
         },
         {
@@ -170,7 +172,7 @@
             ],
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#d6817d"
+                "foreground": "#0C9FCE"
             }
         },
         {
@@ -182,7 +184,7 @@
             ],
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#907aa9"
+                "foreground": "#0C9FCE"
             }
         },
         {
@@ -207,7 +209,7 @@
                 "constant"
             ],
             "settings": {
-                "foreground": "#907aa9"
+                "foreground": "#d6817d"
             }
         },
         {
@@ -221,6 +223,7 @@
             "name": "Strings: Escape Sequences",
             "scope": "constant.character.escape",
             "settings": {
+                "fontStyle": "bold",
                 "foreground": "#777777"
             }
         },
@@ -228,6 +231,7 @@
             "name": "Strings: Regular Expressions",
             "scope": "string.regexp",
             "settings": {
+                "fontStyle": "bold",
                 "foreground": "#525252"
             }
         },
@@ -235,6 +239,7 @@
             "name": "Strings: Symbols",
             "scope": "constant.other.symbol",
             "settings": {
+                "fontStyle": "bold",
                 "foreground": "#907aa9"
             }
         },
@@ -242,6 +247,7 @@
             "name": "Punctuation",
             "scope": "punctuation",
             "settings": {
+                "fontStyle": "bold",
                 "foreground": "#777777"
             }
         },
@@ -464,14 +470,14 @@
                 "meta.separator"
             ],
             "settings": {
-                "foreground": "#525252"
+                "foreground": "#d6817d"
             }
         },
         {
             "name": "Extra: Diff From",
             "scope": "meta.diff.header.from-file",
             "settings": {
-                "foreground": "#525252"
+                "foreground": "#907aa9"
             }
         },
         {
@@ -479,6 +485,13 @@
             "scope": "meta.diff.header.to-file",
             "settings": {
                 "foreground": "#525252"
+            }
+        },
+        {
+            "scope": "invalid.deprecated",
+            "settings": {
+                "fontStyle": "bold strikethrough",
+                "foreground": "#EE653A"
             }
         }
     ],
