@@ -1,31 +1,78 @@
 {
     "bcolors_template": {
+        "01_cosmos": "#eb7198",
+        "01_cosmos_": "#71ebc4",
+        "02_azalea": "#d13a8d",
+        "02_azalea_": "#3ad17e",
+        "03_crismon glory vine": "#991e70",
+        "03_crismon glory vine_": "#1e9947",
+        "04_autumn leaves": "#e2536b",
+        "04_autumn leaves_": "#53e2ca",
+        "05_winter persimmon": "#e15840",
+        "05_winter persimmon_": "#40c9e1",
+        "06_sunset": "#ec8837",
+        "06_sunset_": "#379bec",
+        "07_rice ear": "#bea158",
+        "07_rice ear_": "#5875be",
+        "08_bambo foreast": "#bacc46",
+        "08_bambo foreast_": "#5846cc",
+        "09_forest green": "#429573",
+        "09_forest green_": "#954264",
+        "10_peacock": "#387e84",
+        "10_peacock_": "#843e38",
+        "11_dew on pine tree": "#377d7b",
+        "11_dew on pine tree_": "#7d3739",
+        "12_moonlight": "#295f8b",
+        "12_moonlight_": "#8b5529",
+        "13_deep sea": "#5e6d9e",
+        "13_deep sea_": "#9e8f5e",
+        "14_sky blue": "#4da9f2",
+        "14_sky blue_": "#f2964d",
+        "15_asiatic day flower": "#3e6dd8",
+        "15_asiatic day flower_": "#d8a93e",
+        "16_deep cerulean blue": "#2a62c4",
+        "16_deep cerulean blue_": "#c48c2a",
+        "17_morning glory": "#273abd",
+        "17_morning glory_": "#bdaa27",
+        "18_hydranga": "#636aea",
+        "18_hydranga_": "#eae363",
+        "19_japaneese beauty berry": "#8c53c7",
+        "19_japaneese beauty berry_": "#8ec753",
+        "20_horsetail": "#8c5d3c",
+        "20_horsetail_": "#3c6b8c",
+        "21_wild chestnut": "#5d4526",
+        "21_wild chestnut_": "#263e5d",
+        "22_old man winter": "#9ca1b0",
+        "22_old man winter_": "#b0ab9c",
+        "23_autumn shower": "#a79da1",
+        "23_autumn shower_": "#9da7a3",
+        "24_bamboo charocal": "#333134",
         "_background1": "#eee6dd",
         "_background2": "#ddd0c6",
         "_background3": "#e6dbd1",
         "_background_surface0": "#dcd3cb",
         "_background_surface1": "#d1c9c2",
         "_background_surface2": "#cac1b9",
+        "_blue": "#286983",
+        "_flamingo": "#d6817d",
+        "_green": "#56949f",
+        "_lavender": "#907aa9",
+        "_maroon": "#b4637a",
+        "_mauve": "#907aa9",
         "_menu_overlay0": "#0C9FCE",
         "_menu_overlay1": "#CCCCCC",
         "_menu_overlay2": "#525252",
+        "_peach": "#DD7F67",
+        "_pink": "#907aa9",
+        "_red": "#b4637a",
+        "_rosewater": "#d6817d",
+        "_sapphire": "#286983",
+        "_sky": "#286983",
+        "_teal": "#1A7DA4",
         "_text0": "#575279",
         "_text1": "#0C9FCE",
         "_text2": "#EE653A",
-        "blue": "#286983",
-        "flamingo": "#d6817d",
-        "green": "#56949f",
-        "lavender": "#907aa9",
-        "maroon": "#b4637a",
-        "mauve": "#907aa9",
-        "peach": "#DD7F67",
-        "pink": "#907aa9",
-        "red": "#b4637a",
-        "rosewater": "#d6817d",
-        "sapphire": "#286983",
-        "sky": "#286983",
-        "teal": "#1A7DA4",
-        "yellow": "#ea9d34"
+        "_yellow": "#ea9d34"
     },
     "colors": {
         "activityBar.background": "#286983",
@@ -79,89 +126,77 @@
     "semanticTokenColors": {},
     "tokenColors": [
         {
-            "name": "Comments",
             "scope": [
                 "comment",
+                "comment.block.preprocessor",
+                "comment.documentation",
+                "comment.block.documentation",
                 "punctuation.definition.comment"
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#ea9d3480"
+                "foreground": "#9ca1b0"
             }
         },
         {
-            "name": "Comments: Preprocessor",
-            "scope": "comment.block.preprocessor",
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#ea9d3480"
-            }
-        },
-        {
-            "name": "Comments: Documentation",
-            "scope": [
-                "comment.documentation",
-                "comment.block.documentation"
-            ],
-            "settings": {
-                "foreground": "#b4637a"
-            }
-        },
-        {
-            "name": "Invalid - Illegal",
             "scope": "invalid.illegal",
             "settings": {
-                "fontStyle": "bold strikethrough",
-                "foreground": "#b4637a"
+                "fontStyle": "bold underline",
+                "foreground": "#FC6A38"
             }
         },
         {
-            "name": "Operators",
             "scope": "keyword.operator",
             "settings": {
-                "foreground": "#EE653A"
+                "foreground": "#8c53c7"
             }
         },
         {
-            "name": "Keywords",
             "scope": [
-                "keyword",
+                "keyword"
+            ],
+            "settings": {
+                "fontStyle": "italic bold",
+                "foreground": "#263e5d"
+            }
+        },
+        {
+            "scope": [
                 "storage"
             ],
             "settings": {
-                "foreground": "#d6817d"
+                "fontStyle": "bold",
+                "foreground": "#5d4526"
             }
         },
         {
-            "name": "Types",
             "scope": [
                 "storage.type",
                 "support.type"
             ],
             "settings": {
-                "foreground": "#0C9FCE"
+                "fontStyle": "italic",
+                "foreground": "#1e9947"
             }
         },
         {
-            "name": "Language Constants",
-            "scope": [
-                "constant.language",
-                "support.constant",
-                "variable.language"
-            ],
-            "settings": {
-                "fontStyle": "underline",
-                "foreground": "#b4637a"
-            }
-        },
-        {
-            "name": "Variables",
             "scope": [
                 "variable",
+                "variable.language",
                 "support.variable"
             ],
             "settings": {
-                "foreground": "#575279"
+                "fontStyle": "bold",
+                "foreground": "#295f8b"
+            }
+        },
+        {
+            "scope": [
+                "meta.function.definition.parameters"
+            ],
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#8c53c7"
             }
         },
         {
@@ -172,7 +207,7 @@
             ],
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#0C9FCE"
+                "foreground": "#5875be"
             }
         },
         {
@@ -183,8 +218,8 @@
                 "support.class"
             ],
             "settings": {
-                "fontStyle": "bold",
-                "foreground": "#0C9FCE"
+                "fontStyle": "italic bold",
+                "foreground": "#954264"
             }
         },
         {
@@ -202,29 +237,29 @@
             }
         },
         {
-            "name": "Numbers, Characters",
             "scope": [
                 "constant.numeric",
                 "constant.character",
-                "constant"
+                "constant",
+                "constant.language",
+                "support.constant"
             ],
             "settings": {
-                "foreground": "#d6817d"
+                "fontStyle": "bold",
+                "foreground": "#e2536b"
             }
         },
         {
-            "name": "Strings",
             "scope": "string",
             "settings": {
-                "foreground": "#b4637a"
+                "foreground": "#379bec"
             }
         },
         {
-            "name": "Strings: Escape Sequences",
             "scope": "constant.character.escape",
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#777777"
+                "foreground": "#414247"
             }
         },
         {
@@ -232,23 +267,21 @@
             "scope": "string.regexp",
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#525252"
+                "foreground": "#d6cadd"
             }
         },
         {
-            "name": "Strings: Symbols",
             "scope": "constant.other.symbol",
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#907aa9"
+                "foreground": "#ced1e5"
             }
         },
         {
-            "name": "Punctuation",
             "scope": "punctuation",
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#777777"
+                "foreground": "#ec8837"
             }
         },
         {
