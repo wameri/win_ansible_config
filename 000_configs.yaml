@@ -66,6 +66,7 @@ vscode_extensions:
 - davidanson.vscode-markdownlint
 - davidbwaters.macos-modern-theme
 - divyanshuagrawal.competitive-programming-helper
+- docker.docker
 - donjayamanne.githistory
 - donjayamanne.kusto
 - dracula-theme.theme-dracula
@@ -114,6 +115,7 @@ vscode_extensions:
 - mikestead.dotenv
 - momosct.momotheme
 - ms-azure-devops.azure-pipelines
+- ms-azure-load-testing.microsoft-testing
 - ms-azuretools.azure-dev
 - ms-azuretools.vscode-azure-github-copilot
 - ms-azuretools.vscode-azureappservice
@@ -185,10 +187,12 @@ vscode_extensions:
 - remisa.shellman
 - richie5um2.vscode-sort-json
 - rogalmic.bash-debug
+- rooveterinaryinc.roo-cline
 - rosshamish.kuskus-kusto-language-server
 - rosshamish.kuskus-kusto-syntax-highlighting
 - sainnhe.everforest
 - samuelcolvin.jinjahtml
+- saoudrizwan.claude-dev
 - sf-core-ides.blueberry-cider
 - shd101wyy.markdown-preview-enhanced
 - shortarrow.line-number-deco
