@@ -93,7 +93,19 @@ do this then add and commit the files
 ```wsl
 sudo apt install thunar python3-pip python3-venv -y
 
-git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
+//NO => git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
+
+// From here: https://github.com/git-ecosystem/git-credential-manager/releases/tag/v2.6.1
+wget https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.6.1/gcm-linux_amd64.2.6.1.deb 
+sudo dpkg -i <path-to-package>
+git-credential-manager configure
+git config --global credential.azreposCredentialType oauth
+
+// Anaconda
+// From here: https://repo.anaconda.com/archive/
+wget https://repo.anaconda.com/archive/Anaconda3-2025.06-1-Linux-x86_64.sh
+bash Anaconda3-2025.06-1-Linux-x86_64.sh
+
 
 python3 -m venv dev_env
 source dev_env/bin/activate
