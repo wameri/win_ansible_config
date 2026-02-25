@@ -1,7 +1,39 @@
 dotfiles_configs:
-  dotfiles_dir: C:\data\03_resources\20-29_workspace\20.02_win_dotfiles
+  dotfiles_dir: C:\data\3_resources\20-29_workspace\20.02_win_dotfiles
 
 dotfiles_links:
  - source: Microsoft.PowerShell_profile.ps1
    target: C:\Users\ezraameri\OneDrive - Microsoft/Documents/PowerShell/Microsoft.PowerShell_profile.ps1
    name: powershell_profile
+
+
+dotfiles_repo_local_destination: "/c/data/3_resources/20-29_workspace/"
+dotfiles_repo: "https://github.com/wameri/mac_dotfiles"
+
+git_user_global_config_paths:
+  - ~/.gitconfig
+  - ~/.gitconfig_personal
+
+git_include_if_configs:
+  - gitdir: "/c/data/3_resources/20-29_workspace/"
+    path: "~/.gitconfig_personal"
+
+
+git_user_global_config:
+  - name: user.email
+    value: myemail@email.com
+    state: present
+    path: ~/.gitconfig
+  - name: user.name
+    value: "my name"
+    state: present
+    path: ~/.gitconfig
+  # personal gitconfig
+  - name: user.email
+    value: work.ameri@gmail.com
+    state: present
+    path: ~/.gitconfig_personal
+  - name: user.name
+    value: "Ezra Ameri"
+    state: present
+    path: ~/.gitconfig_personal

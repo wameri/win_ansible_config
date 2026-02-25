@@ -7,10 +7,10 @@ dotfiles_configs:
 dotfiles_links:
 - source: .bash_profile
   target: ~/.bash_profile
-- source: .gitconfig
-  target: ~/.gitconfig
-- source: .gitconfig_local
-  target: ~/.gitconfig_local
+- source: .my_gitconfig
+  target: ~/.my_gitconfig
+- source: .gitignore_global
+  target: ~/.gitignore_global
 - source: .condarc
   target: ~/.condarc
 - source: init.vim
@@ -299,3 +299,135 @@ winget_packages:
   state: install
 - name: FilesCommunity.Files
   state: install
+
+git_global_config_paths:
+  - ~/.my_gitconfig
+  - ~/.gitconfig
+
+git_global_config:
+  - name: core.repositoryformatversion
+    state: absent
+    value: 0
+    path: ~/.gitconfig
+  - name: core.filemode
+    value: "false"
+    state: absent
+    path: ~/.gitconfig
+  - name: core.bare
+    value: "false"
+    state: absent
+    path: ~/.gitconfig
+  - name: core.logallrefupdates
+    value: "false"
+    state: absent
+    path: ~/.gitconfig
+  # my gitconfig
+  - name: include.path
+    value: ~/.my_gitconfig
+    state: present
+    path: ~/.gitconfig
+  - name: core.excludesfile
+    value: ~/.gitignore_global
+    state: present
+    path: ~/.my_gitconfig
+  - name: core.longpaths
+    value: "true"
+    state: present
+    path: ~/.my_gitconfig
+  - name: core.useBuiltInFSMonitor
+    value: "false"
+    state: present
+    path: ~/.my_gitconfig
+  - name: core.autocrlf
+    value: "false"
+    state: present
+    path: ~/.my_gitconfig
+  - name: core.editor
+    value: nvim
+    state: present
+    path: ~/.my_gitconfig
+  - name: pull.rebase
+    value: "false"
+    state: present
+    path: ~/.my_gitconfig
+  - name: fetch.prune
+    value: "false"
+    state: present
+    path: ~/.my_gitconfig
+  - name: rebase.autoStash
+    value: "false"
+    state: present
+    path: ~/.my_gitconfig
+  - name: rebase.instructionFormat
+    value: "[%s], %an@%as"
+    state: present
+    path: ~/.my_gitconfig
+  - name: diff.guitool
+    value: vscode
+    state: present
+    path: ~/.my_gitconfig
+  - name: diff.tool
+    value: vscode
+    state: present
+    path: ~/.my_gitconfig
+  - name: merge.guitool
+    value: vscode
+    state: present
+    path: ~/.my_gitconfig
+  - name: merge.tool
+    value: vscode
+    state: present
+    path: ~/.my_gitconfig
+  - name: difftool.vscode.cmd
+    value: 'code --wait --diff "$LOCAL" "$REMOTE"'
+    state: present
+    path: ~/.my_gitconfig
+  - name: mergetool.vscode.cmd
+    value: 'code --wait "$MERGED"'
+    state: present
+    path: ~/.my_gitconfig
+  - name: filter.lfs.clean
+    value: "git-lfs clean -- %f"
+    state: present
+    path: ~/.my_gitconfig
+  - name: filter.lfs.smudge
+    value: "git-lfs smudge -- %f"
+    state: present
+    path: ~/.my_gitconfig
+  - name: filter.lfs.process
+    value: git-lfs filter-process
+    state: present
+    path: ~/.my_gitconfig
+  - name: filter.lfs.required
+    value: "true"
+    state: present
+    path: ~/.my_gitconfig
+  - name: credential.helper
+    value: manager
+    state: present
+    path: ~/.my_gitconfig
+  - name: credential.azreposCredentialType
+    value: oauth
+    state: present
+    path: ~/.my_gitconfig
+  - name: credential.helperselector.selected
+    value: manager
+    state: present
+    path: ~/.my_gitconfig
+  # cleanup entries in my_gitconfig just in case
+  - name: core.repositoryformatversion
+    state: absent
+    value: 0
+    path: ~/.my_gitconfig
+  - name: core.filemode
+    value: "false"
+    state: absent
+    path: ~/.my_gitconfig
+  - name: core.bare
+    value: "false"
+    state: absent
+    path: ~/.my_gitconfig
+  - name: core.logallrefupdates
+    value: "false"
+    state: absent
+    path: ~/.my_gitconfig
