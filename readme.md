@@ -38,6 +38,12 @@ hit: "modified      HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoR
   Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
   ```
 
+8. install python
+
+```
+ powershell -ExecutionPolicy Bypass -c 'irm https://astral.sh/uv/install.ps1 | iex' 
+ uv python install
+```
 8.python scripts
 
 8.1 bootstrap.py

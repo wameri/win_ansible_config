@@ -32,11 +32,302 @@ dotfiles_links:
   target: ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 - source: config/obsidian
   target: C:/data/3_resources/20-29_workspace/20.01_my_wiki/.obsidian
-scoope_packages:
-- Ffmpeg
-- Ninja
-- innounp
-- dark
+git_global_config:
+- name: core.repositoryformatversion
+  path: ~/.gitconfig
+  state: absent
+  value: 0
+- name: core.filemode
+  path: ~/.gitconfig
+  state: absent
+  value: 'false'
+- name: core.bare
+  path: ~/.gitconfig
+  state: absent
+  value: 'false'
+- name: core.logallrefupdates
+  path: ~/.gitconfig
+  state: absent
+  value: 'false'
+- name: include.path
+  path: ~/.gitconfig
+  state: present
+  value: ~/.my_gitconfig
+- name: core.excludesfile
+  path: ~/.my_gitconfig
+  state: present
+  value: ~/.gitignore_global
+- name: core.longpaths
+  path: ~/.my_gitconfig
+  state: present
+  value: 'true'
+- name: core.useBuiltInFSMonitor
+  path: ~/.my_gitconfig
+  state: present
+  value: 'false'
+- name: core.autocrlf
+  path: ~/.my_gitconfig
+  state: present
+  value: 'false'
+- name: core.editor
+  path: ~/.my_gitconfig
+  state: present
+  value: nvim
+- name: pull.rebase
+  path: ~/.my_gitconfig
+  state: present
+  value: 'false'
+- name: fetch.prune
+  path: ~/.my_gitconfig
+  state: present
+  value: 'false'
+- name: rebase.autoStash
+  path: ~/.my_gitconfig
+  state: present
+  value: 'false'
+- name: rebase.instructionFormat
+  path: ~/.my_gitconfig
+  state: present
+  value: '[%s], %an@%as'
+- name: diff.guitool
+  path: ~/.my_gitconfig
+  state: present
+  value: vscode
+- name: diff.tool
+  path: ~/.my_gitconfig
+  state: present
+  value: vscode
+- name: merge.guitool
+  path: ~/.my_gitconfig
+  state: present
+  value: vscode
+- name: merge.tool
+  path: ~/.my_gitconfig
+  state: present
+  value: vscode
+- name: difftool.vscode.cmd
+  path: ~/.my_gitconfig
+  state: present
+  value: code --wait --diff "$LOCAL" "$REMOTE"
+- name: mergetool.vscode.cmd
+  path: ~/.my_gitconfig
+  state: present
+  value: code --wait "$MERGED"
+- name: filter.lfs.clean
+  path: ~/.my_gitconfig
+  state: present
+  value: git-lfs clean -- %f
+- name: filter.lfs.smudge
+  path: ~/.my_gitconfig
+  state: present
+  value: git-lfs smudge -- %f
+- name: filter.lfs.process
+  path: ~/.my_gitconfig
+  state: present
+  value: git-lfs filter-process
+- name: filter.lfs.required
+  path: ~/.my_gitconfig
+  state: present
+  value: 'true'
+- name: credential.helper
+  path: ~/.my_gitconfig
+  state: present
+  value: manager
+- name: credential.azreposCredentialType
+  path: ~/.my_gitconfig
+  state: present
+  value: oauth
+- name: credential.helperselector.selected
+  path: ~/.my_gitconfig
+  state: present
+  value: manager
+- name: credential.https://github.com.username
+  path: ~/.gitconfig_personal
+  state: present
+  value: wameri
+- name: core.repositoryformatversion
+  path: ~/.my_gitconfig
+  state: absent
+  value: 0
+- name: core.filemode
+  path: ~/.my_gitconfig
+  state: absent
+  value: 'false'
+- name: core.bare
+  path: ~/.my_gitconfig
+  state: absent
+  value: 'false'
+- name: core.logallrefupdates
+  path: ~/.my_gitconfig
+  state: absent
+  value: 'false'
+git_global_config_paths:
+- ~/.my_gitconfig
+- ~/.gitconfig
+scoop_buckets:
+- name: nerd-fonts
+  state: install
+- name: extras
+  state: install
+scoop_packages:
+- name: Ffmpeg
+  state: install
+- name: Ninja
+  state: install
+- name: innounp
+  state: install
+- name: dark
+  state: install
+- name: 0xProto-NF
+  state: install
+- name: 3270-NF
+  state: install
+- name: Agave-NF
+  state: install
+- name: AnonymicePro-NF
+  state: install
+- name: Arimo-NF
+  state: install
+- name: AurulentSansMono-NF
+  state: install
+- name: BigBlueTerminal-NF
+  state: install
+- name: BitstreamVeraSansMono-NF
+  state: install
+- name: BlexMono-NF
+  state: install
+- name: CascadiaCode-NF
+  state: install
+- name: CascadiaMono-NF
+  state: install
+- name: CodeNewRoman-NF
+  state: install
+- name: ComicShannsMono-NF
+  state: install
+- name: CommitMono-NF
+  state: install
+- name: Cousine-NF
+  state: install
+- name: D2Coding-NF
+  state: install
+- name: DaddyTimeMono-NF
+  state: install
+- name: DejaVuSansMono-NF
+  state: install
+- name: DepartureMono-NF
+  state: install
+- name: DroidSansMono-NF
+  state: install
+- name: EnvyCodeR-NF
+  state: install
+- name: FantasqueSansMono-NF
+  state: install
+- name: FiraCode
+  state: install
+- name: FiraCode-NF
+  state: install
+- name: FiraMono
+  state: install
+- name: FiraMono-NF
+  state: install
+- name: GeistMono-NF
+  state: install
+- name: GoMono-NF
+  state: install
+- name: Gohu-NF
+  state: install
+- name: Hack
+  state: install
+- name: Hack-NF
+  state: install
+- name: HackGen-NF
+  state: install
+- name: Hasklug-NF
+  state: install
+- name: HeavyData-NF
+  state: install
+- name: Hurmit-NF
+  state: install
+- name: iA-Writer-NF
+  state: install
+- name: InconsolataGo-NF
+  state: install
+- name: InconsolataLGC-NF
+  state: install
+- name: Inconsolata-NF
+  state: install
+- name: IntelOneMono-NF
+  state: install
+- name: Iosevka
+  state: install
+- name: Iosevka-NF
+  state: install
+- name: Iosevka-Slab
+  state: install
+- name: IosevkaTerm-NF
+  state: install
+- name: IosevkaTermSlab-NF
+  state: install
+- name: JetBrainsMono-NF
+  state: install
+- name: Lekton-NF
+  state: install
+- name: LiberationMono-NF
+  state: install
+- name: Lilex-NF
+  state: install
+- name: MPlus-NF
+  state: install
+- name: MartianMono-NF
+  state: install
+- name: Meslo-NF
+  state: install
+- name: Monaspace-NF
+  state: install
+- name: Monocraft-NF
+  state: install
+- name: Monofur-NF
+  state: install
+- name: Monoid-NF
+  state: install
+- name: Mononoki-NF
+  state: install
+- name: Noto-NF
+  state: install
+- name: OpenDyslexic-NF
+  state: install
+- name: Overpass-NF
+  state: install
+- name: ProFont-NF
+  state: install
+- name: ProggyClean-NF
+  state: install
+- name: RecursiveMono-NF
+  state: install
+- name: RobotoMono-NF
+  state: install
+- name: SourceCodePro-NF
+  state: install
+- name: ShareTechMono-NF
+  state: install
+- name: SpaceMono-NF
+  state: install
+- name: NerdFontsSymbolsOnly
+  state: install
+- name: Terminus-NF
+  state: install
+- name: Tinos-NF
+  state: install
+- name: UbuntuMono-NF
+  state: install
+- name: Ubuntu-NF
+  state: install
+- name: UbuntuSans-NF
+  state: install
+- name: VictorMono-NF
+  state: install
+- name: ZedMono-NF
+  state: install
 vscode_extensions:
 - a5hk.paper
 - aaronthomas.vscode-snazzy-operator
@@ -46,6 +337,7 @@ vscode_extensions:
 - alexandernanberg.horizon-theme-vscode
 - alexdauenhauer.catppuccin-noctis
 - andrewmarkle.primer-light
+- anthropic.claude-code
 - asvetliakov.vscode-neovim
 - ban.spellright
 - bat67.leetcode-extension-pack
@@ -57,6 +349,7 @@ vscode_extensions:
 - catppuccin.catppuccin-vsc
 - catppuccin.catppuccin-vsc-icons
 - catppuccin.catppuccin-vsc-pack
+- chrisjsewell.myst-tml-syntax
 - cimpeanandrei.linux-terminal-flat
 - cometeer.spacemacs
 - connieth.bubblegum
@@ -65,6 +358,7 @@ vscode_extensions:
 - ctrlplusb.i-minimal-theme
 - davidanson.vscode-markdownlint
 - davidbwaters.macos-modern-theme
+- devcenter.ms-devbox
 - divyanshuagrawal.competitive-programming-helper
 - docker.docker
 - donjayamanne.githistory
@@ -118,6 +412,7 @@ vscode_extensions:
 - ms-azure-load-testing.microsoft-testing
 - ms-azuretools.azure-dev
 - ms-azuretools.vscode-azure-github-copilot
+- ms-azuretools.vscode-azure-mcp-server
 - ms-azuretools.vscode-azureappservice
 - ms-azuretools.vscode-azurecontainerapps
 - ms-azuretools.vscode-azurefunctions
@@ -126,6 +421,7 @@ vscode_extensions:
 - ms-azuretools.vscode-azurestorage
 - ms-azuretools.vscode-azurevirtualmachines
 - ms-azuretools.vscode-bicep
+- ms-azuretools.vscode-containers
 - ms-azuretools.vscode-cosmosdb
 - ms-azuretools.vscode-docker
 - ms-dotnettools.csharp
@@ -135,6 +431,7 @@ vscode_extensions:
 - ms-python.debugpy
 - ms-python.python
 - ms-python.vscode-pylance
+- ms-python.vscode-python-envs
 - ms-toolsai.datawrangler
 - ms-toolsai.jupyter
 - ms-toolsai.jupyter-keymap
@@ -160,6 +457,7 @@ vscode_extensions:
 - ms-vscode.anycode-typescript
 - ms-vscode.azurecli
 - ms-vscode.cmake-tools
+- ms-vscode.cpp-devtools
 - ms-vscode.cpptools
 - ms-vscode.cpptools-extension-pack
 - ms-vscode.cpptools-themes
@@ -173,6 +471,7 @@ vscode_extensions:
 - ms-vscode.theme-markdownkit
 - ms-vscode.theme-materialkit
 - ms-vscode.vscode-node-azure-pack
+- ms-windows-ai-studio.windows-ai-studio
 - msazurermtools.azurerm-vscode-tools
 - msrvida.vscode-sanddance
 - mvllow.rose-pine
@@ -203,6 +502,7 @@ vscode_extensions:
 - tamasfe.even-better-toml
 - tankashing.blinds-theme
 - teabyii.ayu
+- teamsdevapp.vscode-ai-foundry
 - thakkeross.thakker-light-earth-hc
 - thakkeross.thakker-light-mist-hc
 - thakkeross.thakker-light-sky-hc
@@ -299,135 +599,3 @@ winget_packages:
   state: install
 - name: FilesCommunity.Files
   state: install
-
-git_global_config_paths:
-  - ~/.my_gitconfig
-  - ~/.gitconfig
-
-git_global_config:
-  - name: core.repositoryformatversion
-    state: absent
-    value: 0
-    path: ~/.gitconfig
-  - name: core.filemode
-    value: "false"
-    state: absent
-    path: ~/.gitconfig
-  - name: core.bare
-    value: "false"
-    state: absent
-    path: ~/.gitconfig
-  - name: core.logallrefupdates
-    value: "false"
-    state: absent
-    path: ~/.gitconfig
-  # my gitconfig
-  - name: include.path
-    value: ~/.my_gitconfig
-    state: present
-    path: ~/.gitconfig
-  - name: core.excludesfile
-    value: ~/.gitignore_global
-    state: present
-    path: ~/.my_gitconfig
-  - name: core.longpaths
-    value: "true"
-    state: present
-    path: ~/.my_gitconfig
-  - name: core.useBuiltInFSMonitor
-    value: "false"
-    state: present
-    path: ~/.my_gitconfig
-  - name: core.autocrlf
-    value: "false"
-    state: present
-    path: ~/.my_gitconfig
-  - name: core.editor
-    value: nvim
-    state: present
-    path: ~/.my_gitconfig
-  - name: pull.rebase
-    value: "false"
-    state: present
-    path: ~/.my_gitconfig
-  - name: fetch.prune
-    value: "false"
-    state: present
-    path: ~/.my_gitconfig
-  - name: rebase.autoStash
-    value: "false"
-    state: present
-    path: ~/.my_gitconfig
-  - name: rebase.instructionFormat
-    value: "[%s], %an@%as"
-    state: present
-    path: ~/.my_gitconfig
-  - name: diff.guitool
-    value: vscode
-    state: present
-    path: ~/.my_gitconfig
-  - name: diff.tool
-    value: vscode
-    state: present
-    path: ~/.my_gitconfig
-  - name: merge.guitool
-    value: vscode
-    state: present
-    path: ~/.my_gitconfig
-  - name: merge.tool
-    value: vscode
-    state: present
-    path: ~/.my_gitconfig
-  - name: difftool.vscode.cmd
-    value: 'code --wait --diff "$LOCAL" "$REMOTE"'
-    state: present
-    path: ~/.my_gitconfig
-  - name: mergetool.vscode.cmd
-    value: 'code --wait "$MERGED"'
-    state: present
-    path: ~/.my_gitconfig
-  - name: filter.lfs.clean
-    value: "git-lfs clean -- %f"
-    state: present
-    path: ~/.my_gitconfig
-  - name: filter.lfs.smudge
-    value: "git-lfs smudge -- %f"
-    state: present
-    path: ~/.my_gitconfig
-  - name: filter.lfs.process
-    value: git-lfs filter-process
-    state: present
-    path: ~/.my_gitconfig
-  - name: filter.lfs.required
-    value: "true"
-    state: present
-    path: ~/.my_gitconfig
-  - name: credential.helper
-    value: manager
-    state: present
-    path: ~/.my_gitconfig
-  - name: credential.azreposCredentialType
-    value: oauth
-    state: present
-    path: ~/.my_gitconfig
-  - name: credential.helperselector.selected
-    value: manager
-    state: present
-    path: ~/.my_gitconfig
-  # cleanup entries in my_gitconfig just in case
-  - name: core.repositoryformatversion
-    state: absent
-    value: 0
-    path: ~/.my_gitconfig
-  - name: core.filemode
-    value: "false"
-    state: absent
-    path: ~/.my_gitconfig
-  - name: core.bare
-    value: "false"
-    state: absent
-    path: ~/.my_gitconfig
-  - name: core.logallrefupdates
-    value: "false"
-    state: absent
-    path: ~/.my_gitconfig
